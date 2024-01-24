@@ -18,4 +18,44 @@ public class Doctor {
         this.patients = new ArrayList<>();
         this.hospitalId = hospitalId;
     }
+
+    public UUID getDocId() {
+        return docId;
+    }
+
+    public void setDocId(UUID docId) {
+        this.docId = docId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDegree() {
+        return degree;
+    }
+
+    public void setDegree(String degree) {
+        this.degree = degree;
+    }
+
+    public List<Patient> getPatients() {
+        return patients;
+    }
+
+    public void setPatients(List<Patient> patients) {
+        this.patients = patients;
+    }
+
+    public UUID getHospitalId() {
+        return hospitalId;
+    }
+
+    public void setHospitalId(UUID hospitalId) {
+        this.hospitalId = hospitalId;
+    }
 }
