@@ -7,6 +7,7 @@ import com.hospitalmanagementsystem.Hospital.Management.System.repository.Patien
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.UUID;
 
 @Service
@@ -38,5 +39,13 @@ public class PatientService {
         bed.setDoctor(doctor.getDocId());
         // 5. save patient to database
        patientRepository.registerPatient(obj);
+    }
+    public List<Patient> getAllPatient(){
+        return patientRepository.getAllPatient();
+    }
+
+    public Patient getById(UUID id){
+
+        return patientRepository.getById(id);
     }
 }
